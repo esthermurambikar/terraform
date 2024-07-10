@@ -37,7 +37,7 @@ resource "aws_security_group" "web" {
 resource "aws_instance" "web" {
   ami                         = "ami-024ebc7de0fc64e44"
   instance_type               = "t2.medium"
-  key_name                    = "dollyd"
+  key_name                    = "haiii"
   user_data                   = file("userdata.sh")
   vpc_security_group_ids      = [aws_security_group.web.id]
   tags = {
