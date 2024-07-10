@@ -35,7 +35,7 @@ resource "aws_security_group" "web" {
   }
 }
 resource "aws_instance" "web" {
-  ami                         = "ami-0195204d5dce06d99"
+  ami                         = "ami-0b7a317a30ce6d3a0"
   instance_type               = "t2.medium"
   key_name                    = "dollyd"
   user_data                   = file("userdata.sh")
